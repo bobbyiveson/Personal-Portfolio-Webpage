@@ -4,33 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>FCC - Build a Personal Portfolio Webpage</title>
+    <script
+      src="https://kit.fontawesome.com/6f888cbe8c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- navbar should always be at the top of the viewport -->
     <nav id="navbar">
-      <a href="welcome-section">About Me</a>
+      <a href="#welcome-section">About Me</a>
       <a href="#projects">My Projects</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#contact-info">Contact Me</a>
     </nav>
 
     <!-- the welcome section should have a height equal to the height of the viewport -->
-    <section id="welcome-section">
-      <h1>Hi, welcome to my Portfolio Webpage</h1>
+    <section id="welcome-section" class="page-section">
+      <h1>Hi, I'm Bobby Iveson...</h1>
+      <p>an aspiring developer from London, UK</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="page-section">
+      <h2>My Projects</h2>
       <div class="project-tile">
         <a href=""></a>
       </div>
     </section>
 
-    <section id="contact-info">
-      <a href="">Github</a>
-      <a href="">Twitter</a>
-      <a href="">Send an email</a>
-      <a href="">Call me</a>
+    <section id="contact-info" class="page-section">
+      <h2>Contact Me</h2>
+      <div id="icon-container">
+        <a href=""><i class="fab fa-twitter"></i>Twitter</i></a>
+        <a href=""><i class="fab fa-github"></i>GitHub</a>
+        <a href=""><i class="fas fa-at"></i>Email</a>
+        <a href=""><i class="fas fa-mobile-alt"></i></i>Call</a>
+      </div>
     </section>
   </body>
 </html>
