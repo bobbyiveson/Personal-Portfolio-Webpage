@@ -1,0 +1,97 @@
+@use 'reset'
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap')
+// font-family: 'ZCOOL KuaiLe', cursive
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap')
+// font-family: 'ZCOOL QingKe HuangYou', cursive
+
+@mixin flex-center($direction) 
+    display: flex
+    flex-direction: $direction
+    justify-content: center
+    align-items: center
+
+html
+    font-size: 62.5% // 10px = 1rem
+    overflow: hidden
+    height: 100%
+
+body
+    overflow: scroll
+    scroll-behavior: smooth
+    height: 100%
+
+#navbar
+    height: 10vh
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    background-color: black
+    border-bottom: 2px solid red
+
+    a
+        min-inline-size: 120px
+        color: white
+        text-decoration: none
+        @include flex-center($direction: row)
+        font-size: 2rem
+        text-align: center
+        font-family: 'ZCOOL QingKe HuangYou', cursive
+        font-weight: bold
+        padding: 0 3rem
+        
+
+
+
+.page-section 
+    height: 100vh
+    width: 100vw
+    
+    p
+        font-family: 'ZCOOL QingKe HuangYou', cursive
+        font-size: 2rem
+        color: red
+        padding: 1rem
+
+    h1
+        font-family: 'ZCOOL KuaiLe', cursive
+        font-size: 5rem
+        padding: 1rem
+
+    h2
+        font-family: 'ZCOOL KuaiLe', cursive
+        font-size: 5rem
+        padding: 1rem
+
+    &#welcome-section
+        background-color: black
+        color: white
+        // height: 100vh
+
+        @include flex-center($direction: column)
+
+
+    &#projects
+        background-color: white
+        color: black
+
+        @include flex-center(column)
+        
+
+    &#contact-info
+        background-color: black
+        color: white
+
+        @include flex-center(column)
+
+        #icon-container
+            @include flex-center($direction: row)
+            width: 80%
+            
+
+a i
+    color: white
