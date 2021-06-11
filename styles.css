@@ -219,4 +219,14 @@ body {
   position: absolute;
 }
 
+@media (max-width: 400px) {
+  h2 {
+    font-size: 4rem !important;
+  }
+
+  div h2 {
+    font-size: 1.5em !important;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
