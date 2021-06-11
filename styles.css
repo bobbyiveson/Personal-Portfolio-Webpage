@@ -63,7 +63,6 @@ body {
 .page-section h2 {
   font-family: "ZCOOL KuaiLe", cursive;
   font-size: 8rem;
-  padding: 1rem;
 }
 .page-section#welcome-section {
   background-color: black;
@@ -76,10 +75,42 @@ body {
 .page-section#projects {
   background-color: white;
   color: black;
+  padding-top: 15vh;
+}
+.page-section#projects > h2 {
+  text-align: center;
+}
+.page-section#projects #project-tile-flexbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  min-height: 70vh;
+}
+.page-section#projects #project-tile-flexbox .project-tile {
+  width: fit-content;
+  color: yellow;
+  margin: 0 2rem 0 2rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.page-section#projects #project-tile-flexbox .project-tile h2 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+.page-section#projects #project-tile-flexbox .project-tile a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+.page-section#projects #project-tile-flexbox .project-tile img {
+  display: block;
+  width: 300px;
 }
 .page-section#contact-info {
   background-color: black;
