@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>FCC - Build a Personal Portfolio Webpage</title>
-    <script
-      src="https://kit.fontawesome.com/6f888cbe8c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/6f888cbe8c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- navbar should always be at the top of the viewport -->
@@ -18,59 +15,69 @@
       <a href="#projects">My Projects</a>
       <a href="#contact-info">Contact Me</a>
     </nav>
-
+    
     <!-- the welcome section should have a height equal to the height of the viewport -->
     <section id="welcome-section" class="page-section">
       <h1>Hi, I'm Bobby Iveson...</h1>
       <p>an aspiring developer from London, UK</p>
     </section>
-
+    
     <section id="projects" class="page-section">
       <h2>My Projects</h2>
       <div class="project-tile">
-        <a href=""></a>
+        <h2>Product Landing Page</h2>
+        <a href=""><img src="./project-images/Screenshot 2021-06-09 at 22.07.18.png" alt=""></a>
+      </div>
+      <div class="project-tile">
+        <h2>Noughts & Crosses</h2>
+        <a href=""><img src="./project-images/Screenshot 2021-06-11 at 04.52.35.png" alt=""></a>
+      </div>
+      <div class="project-tile">
+        <h2>Travel Agents Landing Page</h2>
+        <a href=""><img src="./project-images/Screenshot 2021-06-11 at 05.02.42.png" alt=""></a>
       </div>
     </section>
-
+    
     <section id="contact-info" class="page-section">
       <h2>Contact Me</h2>
-      <div id="icon-container">
-        <a href="https://twitter.com/bobby_j_iveson"><i class="fab fa-twitter"></i>Twitter</i></a>
-        <a href="https://github.com/bobbyiveson"><i class="fab fa-github"></i>GitHub</a>
-        <a href="https://linkedin/in/bobby-j-iveson">LinkedIn</a>
-        <a href=""><i class="fas fa-at"></i>Email</a>
-        <a href=""><i class="fas fa-mobile-alt"></i></i>Call</a>
-
-        <a href="https://www.freecodecamp.org/bobbyiveson" target="_blank">FreeCodeCamp</a>
+      
+      <div id="social-icon-container">
+        <a href="https://linkedin/in/bobby-j-iveson"><i class="social-icon fab fa-linkedin-in fa-4x"></i></a>
+        <a href=""><i class="social-icon fas fa-at fa-4x"></i></a>
+        <a id="profile-link" href="https://github.com/bobbyiveson"><i class="social-icon fab fa-github fa-4x"></i></a>
+        <a href="https://twitter.com/bobby_j_iveson"><i class="social-icon fab fa-twitter fa-4x"></i></i></a>
+        <a href=""><i class="social-icon fas fa-mobile-alt fa-4x"></i></a>
+      </div>
+      
+      <!-- <a href="https://www.freecodecamp.org/bobbyiveson" target="_blank">FreeCodeCamp</a>
         <a href="https://www.codecademy.com/profiles/BobbyIveson">CodeCademy</a>
-        <a href="https://dev.to/bobbyiveson">Dev.to</a>
-      </div>
-      <div id="badge-container">
-        <section id="digital-badges-container">
-          <a href="https://www.credly.com/badges/674988a3-76c1-4fca-9f50-50633f04d067/public_url">
-            <img src="./badge-images/oracle-certified-associate-java-se-8-programmer.png" alt="">
-          </a>
-          <a href="https://www.credly.com/badges/45c7fe68-6993-4cf6-8042-b6f4db88cd1e/public_url">
-            <img src="./badge-images/oracle-certified-professional-java-se-8-programmer.png" alt="">
-          </a>
-          <a href="https://www.credly.com/badges/f6fa688a-c6b1-4ea9-93eb-b0e161f77d43/public_url">
-            <img src="./badge-images/mta-introduction-to-programming-using-python-certified-2020.png" alt="">
-          </a>
-          <a href="https://www.credly.com/badges/31cf9465-2b4c-4c58-a665-7a2dd136a789/public_url">
-            <img src="./badge-images/mta-software-development-fundamentals-certified-2019.png" alt="">
-          </a>
-        </section>
-      </div>
-    </section>
-    <!-- <section id="digital-badges-container">
-      <div id="mta-python-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f6fa688a-c6b1-4ea9-93eb-b0e161f77d43" data-share-badge-host="https://www.credly.com"></div>
-      <div id="java-ocp-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="674988a3-76c1-4fca-9f50-50633f04d067" data-share-badge-host="https://www.credly.com"></div>
-      <div id="java-oca-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="45c7fe68-6993-4cf6-8042-b6f4db88cd1e" data-share-badge-host="https://www.credly.com"></div>
-      <div id="mta-software-dev-fundamentals-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="31cf9465-2b4c-4c58-a665-7a2dd136a789" data-share-badge-host="https://www.credly.com"></div>
-      <a href="https://www.credly.com/users/bobby-iveson">Credly Certification</a> 
-      <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-    </section> -->
-    <div>
-    </div>
-  </body>
-</html>
+        <a href="https://dev.to/bobbyiveson">Dev.to</a> -->
+        
+        <div id="badge-container">
+          <section id="digital-badges-container">
+            <a href="https://www.credly.com/badges/674988a3-76c1-4fca-9f50-50633f04d067/public_url">
+              <img src="./badge-images/oracle-certified-associate-java-se-8-programmer.png" alt="">
+            </a>
+            <a href="https://www.credly.com/badges/45c7fe68-6993-4cf6-8042-b6f4db88cd1e/public_url">
+              <img src="./badge-images/oracle-certified-professional-java-se-8-programmer.png" alt="">
+            </a>
+            <a href="https://www.credly.com/badges/f6fa688a-c6b1-4ea9-93eb-b0e161f77d43/public_url">
+              <img src="./badge-images/mta-introduction-to-programming-using-python-certified-2020.png" alt="">
+            </a>
+            <a href="https://www.credly.com/badges/31cf9465-2b4c-4c58-a665-7a2dd136a789/public_url">
+              <img src="./badge-images/mta-software-development-fundamentals-certified-2019.png" alt="">
+            </a>
+          </section>
+        </div>
+      </section>
+      <!-- <section id="digital-badges-container">
+        <div id="mta-python-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f6fa688a-c6b1-4ea9-93eb-b0e161f77d43" data-share-badge-host="https://www.credly.com"></div>
+        <div id="java-ocp-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="674988a3-76c1-4fca-9f50-50633f04d067" data-share-badge-host="https://www.credly.com"></div>
+        <div id="java-oca-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="45c7fe68-6993-4cf6-8042-b6f4db88cd1e" data-share-badge-host="https://www.credly.com"></div>
+        <div id="mta-software-dev-fundamentals-badge" class="badge" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="31cf9465-2b4c-4c58-a665-7a2dd136a789" data-share-badge-host="https://www.credly.com"></div>
+        <a href="https://www.credly.com/users/bobby-iveson">Credly Certification</a> 
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </section> -->
+    </body>
+    </html>
+    

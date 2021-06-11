@@ -62,7 +62,7 @@ body {
 }
 .page-section h2 {
   font-family: "ZCOOL KuaiLe", cursive;
-  font-size: 5rem;
+  font-size: 8rem;
   padding: 1rem;
 }
 .page-section#welcome-section {
@@ -88,20 +88,53 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
 }
-.page-section#contact-info #icon-container {
+.page-section#contact-info h2 {
+  text-align: center;
+}
+.page-section#contact-info #social-icon-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
+  justify-content: space-around;
 }
-.page-section#contact-info ::before {
-  content: "";
+.page-section#contact-info #social-icon-container a {
+  flex: 0 0;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+}
+.page-section#contact-info #social-icon-container .social-icon {
+  background: linear-gradient(0deg, red 50%, white 50%);
+  border-radius: 25px;
+  padding: 2rem;
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  transition: 1s;
+  color: black;
+}
+.page-section#contact-info #social-icon-container .social-icon:after {
+  position: absolute;
+  background: linear-gradient(0deg, white 50%, red 50%);
+  border-radius: 25px;
+  padding: 2rem;
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-section#contact-info #social-icon-container .social-icon:hover, .page-section#contact-info #social-icon-container .social-icon:hover:after {
+  transition: 1s;
+  background-position: 0% 100%;
 }
 
-a i {
-  color: white;
+.fa-mobile-alt {
+  width: 80px;
 }
 
 @keyframes slide-out {
@@ -127,16 +160,17 @@ a i {
   align-items: center;
   height: fit-content;
   width: fit-content;
-  background-color: yellow;
+  background-color: red;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   padding: 1rem 6rem 1rem 0;
   position: absolute;
   bottom: 0;
   animation-name: slide-in;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-in;
+  left: -670px;
 }
 #digital-badges-container .badge, #digital-badges-container img {
   max-height: 150px;
@@ -151,9 +185,7 @@ a i {
 }
 
 #badge-container {
-  position: relative;
-  top: 300px;
-  left: -640px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=styles.css.map */
