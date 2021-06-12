@@ -112,6 +112,31 @@ body {
   display: block;
   width: 300px;
 }
+.page-section#projects #coding-experience-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+.page-section#projects #coding-experience-flexbox a {
+  flex: 0 0;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  margin: auto 2rem;
+}
+.page-section#projects #coding-experience-flexbox .site-icon {
+  background-color: black;
+  color: red;
+  padding: 2rem;
+  text-align: center;
+  min-width: 80px;
+  min-height: auto;
+  border-radius: 25px;
+}
 .page-section#contact-info {
   background-color: black;
   color: white;
@@ -137,6 +162,7 @@ body {
   text-align: center;
   width: fit-content;
   height: fit-content;
+  margin: auto 2rem;
 }
 .page-section#contact-info #social-icon-container .social-icon {
   background: linear-gradient(0deg, red 50%, white 50%);
